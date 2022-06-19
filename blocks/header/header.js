@@ -41,6 +41,8 @@ export default async function decorate(block) {
     if (navSections) {
       navSections.querySelectorAll(':scope > ul > li').forEach((navSection) => {
         if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
+        const a = navSection.querySelector('a');
+        if (a && new URL(a.href).pathname === window.location.pathname) navSection.classList.add('nav-selected');
         navSection.addEventListener('click', () => {
           const expanded = navSection.getAttribute('aria-expanded') === 'true';
           collapseAllNavSections(navSections);
