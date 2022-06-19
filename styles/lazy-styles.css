@@ -1,1 +1,30 @@
 /* below the fold CSS goes here */
+
+@font-face {
+    font-family: 'Telesans Text';
+    src: url("/styles/TelesansText-Regular.eot");
+    src: url("/styles/TelesansText-Regular.eot?#iefix") format("embedded-opentype"), url("/styles/TelesansText-Regular.woff2") format("woff2"), url("/styles/TelesansText-Regular.woff") format("woff"), url("/styles/TelesansText-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: 'Austin News Text Roman';
+    src: url("/styles/AustinNewsText-Roman.eot");
+    src: url("/styles/AustinNewsText-Roman.eot?#iefix") format("embedded-opentype"), url("/styles/AustinNewsText-Roman.woff2") format("woff2"), url("/styles/AustinNewsText-Roman.woff") format("woff"), url("/styles/AustinNewsText-Roman.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: 'Austin News Deck Semibold';
+    src: url("/styles/AustinNewsDeck-Semibold.eot");
+    src: url("/styles/AustinNewsDeck-Semibold.eot?#iefix") format("embedded-opentype"), url("/styles/AustinNewsDeck-Semibold.woff2") format("woff2"), url("/styles/AustinNewsDeck-Semibold.woff") format("woff"), url("/styles/AustinNewsDeck-Semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: 'Austin News Deck Medium';
+    src: url("/styles/AustinNewsDeck-Medium.eot");
+    src: url("/styles/AustinNewsDeck-Medium.eot?#iefix") format("embedded-opentype"), url("/styles/AustinNewsDeck-Medium.woff2") format("woff2"), url("/styles/AustinNewsDeck-Medium.woff") format("woff"), url("/styles/AustinNewsDeck-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal; }
+  

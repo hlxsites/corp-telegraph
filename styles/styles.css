@@ -11,6 +11,11 @@
  */
 
  :root {
+  /* corp colors */
+  --petrol: #04445c;
+  --dark-green: #285D6A;
+  --green: #045e6c;
+
   /* colors */
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
@@ -20,8 +25,9 @@
   --text-color: #000;
 
   /* fonts */
-  --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
-  --heading-font-family: var(--body-font-family);
+  --body-font-family: 'Austin News Text Roman';
+  --heading-font-family: 'Austin News Deck Medium';
+  --nav-font-family: 'Telesans Text';
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
@@ -37,7 +43,7 @@
   --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 105px;
 
 }
 
