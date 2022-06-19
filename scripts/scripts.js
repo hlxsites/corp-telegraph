@@ -644,17 +644,26 @@ function loadFooter(footer) {
   loadBlock(footerBlock);
 }
 
-
 function buildFullBleedBlocks(main) {
   main.querySelectorAll(':scope > div > picture').forEach((picture) => {
     const div = picture.closest('div');
     if (div.textContent.trim() === '') {
       div.textContent = '';
-      div.append(buildBlock('full-bleed', picture.outerHTML ));
+      div.append(buildBlock('full-bleed', picture.outerHTML));
     }
   });
 }
 
+function decorateSectionStyles(main) {
+  const sectionStyles = getMetadata('section-styles');
+  if (sectionStyles) {
+    const styles = getMetadata('section-styles').split(',').map((e) => toClassName(e.trim()));
+    const sections = [...main.querySelectorAll(':scope > .section')];
+    styles.forEach((style, i) => {
+      if (style !== 'none') sections[i].classList.add(style);
+    });
+  }
+}
 
 /**
  * Builds all synthetic blocks in a container element.
@@ -684,6 +693,7 @@ export function decorateMain(main) {
   decorateIcons(main);
   buildAutoBlocks(main);
   decorateSections(main);
+  decorateSectionStyles(main);
   decorateBlocks(main);
 }
 
@@ -714,7 +724,7 @@ async function loadLazy(doc) {
   loadFooter(doc.querySelector('footer'));
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
-  addFavIcon(`${window.hlx.codeBasePath}/styles/favicon.svg`);
+  addFavIcon(`${window.hlx.codeBasePath}/styles/favicon.png`);
 }
 
 /**

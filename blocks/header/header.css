@@ -36,11 +36,6 @@ header .nav-brand {
   position: relative;
   box-sizing: border-box;
   padding: 0 32px;
-  background-image: url('header-bg.png');
-  background-size: cover;
-  background-position: calc((100vw - 900px)/2 + 330px) 0;
-  background-color: var(--dark-green);
-  background-repeat: no-repeat;
 }
 
 header .nav-brand ul {
@@ -169,7 +164,7 @@ header nav[aria-expanded='true'] .nav-tools li {
 }
 
 /* desktop nav styles */
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   header nav {
     display: flex;
     flex-direction: column;
@@ -211,6 +206,11 @@ header nav[aria-expanded='true'] .nav-tools li {
     flex: 0 0 65px;
     padding-top: 20px;
     width: 100%;
+    background-image: url('header-bg.png');
+    background-size: cover;
+    background-position: calc((100vw - 900px)/2 + 330px) 0;
+    background-color: var(--dark-green);
+    background-repeat: no-repeat;  
   }
 
   header nav .nav-brand p {
@@ -258,7 +258,7 @@ header nav[aria-expanded='true'] .nav-tools li {
   }
 
   header nav .nav-sections > ul > li.nav-selected {
-    border-bottom: 3px solid var(--bright-green);
+    border-bottom: 4px solid var(--bright-green);
   }
 
   header nav .nav-sections > ul > li > p {

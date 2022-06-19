@@ -1,7 +1,32 @@
 main > .full-bleed-container {
     padding: 0;
+    background: unset;
 }
 
-main > .full-bleed-container > div{
+main > div.section.full-bleed-container > div {
     max-width: unset;
+    background: unset;
+    padding: unset;
+    border: unset;
+}
+
+.full-bleed {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.full-bleed picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.full-bleed img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
